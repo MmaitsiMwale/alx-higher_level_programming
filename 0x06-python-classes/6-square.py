@@ -1,6 +1,7 @@
 #!/usr/bin/python3
-
-from turtle import position
+"""A class that defines a square with a default size of 0
+    methods: area()
+"""
 
 
 class Square:
@@ -50,5 +51,3 @@ class Square:
             for j in range(self.__size):
                 print("#", end="")
             print("\n")
-
-    

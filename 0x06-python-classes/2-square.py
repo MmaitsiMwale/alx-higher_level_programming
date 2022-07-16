@@ -1,4 +1,6 @@
 #!/usr/bin/python3
+"""A class that defines a square with a default size of 0"""
+
 
 class Square:
     """A class that defines a square with a default size of 0"""
