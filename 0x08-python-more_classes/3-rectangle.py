@@ -59,7 +59,7 @@ class Rectangle:
     def __self_print(self):
         """prints a square of width, and height"""
         if self.__width == 0 or self.__height == 0:
-            print("\n", end="")
+            return ""
         for i in range(self.__height):
             for j in range(self.__width):
                 print("#", end="")
