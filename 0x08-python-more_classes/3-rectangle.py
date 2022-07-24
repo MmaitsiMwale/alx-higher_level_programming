@@ -10,7 +10,14 @@ class Rectangle:
         self.height = height
 
     def __str__(self):
-        return str(self.__self_print())
+        """prints a square of width, and height"""
+        if self.__width == 0 or self.__height == 0:
+            return ""
+        for i in range(self.__height):
+            for j in range(self.__width):
+                print("#", end="")
+            print("\n", end="")
+        return ""
 
     @property
     def width(self):
@@ -55,12 +62,3 @@ class Rectangle:
         if self.__width == 0 or self.__height == 0:
             return 0
         return 2 * (self.__width + self.__height)
-
-    def __self_print(self):
-        """prints a square of width, and height"""
-        if self.__width == 0 or self.__height == 0:
-            return ""
-        for i in range(self.__height):
-            for j in range(self.__width):
-                print("#", end="")
-            print("\n", end="")
